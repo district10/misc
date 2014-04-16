@@ -1,0 +1,19 @@
+% One Day of my Life
+% Gnat TANG
+% Apr 16, 2014
+
+# In the morning
+
+- Have class: Photogrammetry
+- Late for class
+
+# In the evening
+
+- Have class: Spacial Analysis
+- Late again
+
+# Conclusion
+
+- And the answer is...
+- $f(x)=\sum_{n=0}^\infty\frac{f^{(n)}(a)}{n!}(x-a)^n$    
+- I can't keep the rule... 
