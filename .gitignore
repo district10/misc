@@ -8,3 +8,6 @@ output_*
 *.out
 *.log
 *.pdf
+
+# doc
+*.docx
