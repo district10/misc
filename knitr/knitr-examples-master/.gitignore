@@ -1,0 +1,9 @@
+figure/
+cache/
+r-forge/
+*.pdf
+*-tikzDictionary
+*.log
+095-pandoc.sty
+/Sweavel.sty
+.Rproj.user

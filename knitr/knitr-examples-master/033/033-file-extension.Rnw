@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\begin{document}
+
+We want the file extension when including a figure into LaTeX.
+
+<<setup>>=
+hook_plot = knit_hooks$get('plot')
+knit_hooks$set(plot = function(x, options) {
+   # if x is foo.pdf, make it foo.pdf.whatever so the plot hook removes the extension internally
+  x = paste(c(x, 'whatever'), collapse = '.')
+  hook_plot(x, options)
+})
+@
+
+You should see \textbackslash{}includegraphics\{test.pdf\} instead of \textbackslash{}includegraphics\{test\}.
+
+<<test-a>>=
+# pdf figure
+plot(1)
+@
+
+<<test-b, dev='png'>>=
+# png figure
+plot(2)
+@
+
+\end{document}

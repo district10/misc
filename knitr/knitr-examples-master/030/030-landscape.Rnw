@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{lscape}
+\begin{document}
+
+See if the landscape environment works.
+
+hello world
+
+\newpage
+\begin{landscape}
+\begin{table}\centering
+<<results='asis'>>=
+library(knitr)
+kable(head(iris))
+@
+\end{table}
+\end{landscape}
+\newpage
+
+hello again
+
+<<results='asis'>>=
+library(Hmisc)
+latex(head(iris), file='', landscape=TRUE)
+@
+
+\end{document}

@@ -1,0 +1,630 @@
+\documentclass{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\begin{document}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{library}\hlstd{(diagram)}
+\end{alltt}
+
+
+{\ttfamily\noindent\itshape\color{messagecolor}{\#\# Loading required package: shape}}\begin{alltt}
+\hlkwd{read_demo}\hlstd{(}\hlstr{"flowchart"}\hlstd{,} \hlkwc{package} \hlstd{=} \hlstr{"diagram"}\hlstd{,} \hlkwc{labels} \hlstd{=} \hlstr{"demo-flowchart"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\end{knitrout}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlcom{## Flowchart examples}
+\hlkwd{par}\hlstd{(}\hlkwc{ask} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+
+\hlcom{## MODELLING DIAGRAM}
+\hlstd{mar} \hlkwb{<-} \hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{))}
+\hlkwd{openplotmat}\hlstd{(}\hlkwc{main} \hlstd{=} \hlstr{"from Soetaert and herman, book in prep"}\hlstd{,}
+    \hlkwc{cex.main} \hlstd{=} \hlnum{1}\hlstd{)}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{),} \hlkwc{mx} \hlstd{=} \hlopt{-}\hlnum{0.1}\hlstd{)}
+\hlkwd{segmentarrow}\hlstd{(elpos[}\hlnum{7}\hlstd{, ], elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{arr.pos} \hlstd{=} \hlnum{0.15}\hlstd{,} \hlkwc{dd} \hlstd{=} \hlnum{0.3}\hlstd{,}
+    \hlkwc{arr.side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{endhead} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\hlkwd{segmentarrow}\hlstd{(elpos[}\hlnum{7}\hlstd{, ], elpos[}\hlnum{3}\hlstd{, ],} \hlkwc{arr.pos} \hlstd{=} \hlnum{0.15}\hlstd{,} \hlkwc{dd} \hlstd{=} \hlnum{0.3}\hlstd{,}
+    \hlkwc{arr.side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{endhead} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\hlkwd{segmentarrow}\hlstd{(elpos[}\hlnum{7}\hlstd{, ], elpos[}\hlnum{4}\hlstd{, ],} \hlkwc{arr.pos} \hlstd{=} \hlnum{0.15}\hlstd{,} \hlkwc{dd} \hlstd{=} \hlnum{0.3}\hlstd{,}
+    \hlkwc{arr.side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{endhead} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+
+\hlstd{pin} \hlkwb{<-} \hlkwd{par}\hlstd{(}\hlstr{"pin"}\hlstd{)}  \hlcom{# size of plotting region, inches}
+\hlstd{xx} \hlkwb{<-} \hlnum{0.2}
+\hlstd{yy} \hlkwb{<-} \hlstd{xx} \hlopt{*} \hlstd{pin[}\hlnum{1}\hlstd{]}\hlopt{/}\hlstd{pin[}\hlnum{2}\hlstd{]} \hlopt{*} \hlnum{0.15}  \hlcom{# used to make circles round}
+
+\hlstd{sx} \hlkwb{<-} \hlkwd{rep}\hlstd{(xx,} \hlnum{8}\hlstd{)}
+\hlstd{sx[}\hlnum{7}\hlstd{]} \hlkwb{<-} \hlnum{0.05}
+
+\hlstd{sy} \hlkwb{<-} \hlkwd{rep}\hlstd{(yy,} \hlnum{8}\hlstd{)}
+\hlstd{sy[}\hlnum{6}\hlstd{]} \hlkwb{<-} \hlstd{yy} \hlopt{*} \hlnum{1.5}
+\hlstd{sy[}\hlnum{7}\hlstd{]} \hlkwb{<-} \hlstd{sx[}\hlnum{7}\hlstd{]} \hlopt{*} \hlstd{pin[}\hlnum{1}\hlstd{]}\hlopt{/}\hlstd{pin[}\hlnum{2}\hlstd{]}
+
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlkwd{c}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{7}\hlstd{))} \hlkwd{straightarrow}\hlstd{(}\hlkwc{to} \hlstd{= elpos[i} \hlopt{+} \hlnum{1}\hlstd{, ],} \hlkwc{from} \hlstd{= elpos[i,}
+    \hlstd{],} \hlkwc{lwd} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{arr.pos} \hlstd{=} \hlnum{0.6}\hlstd{,} \hlkwc{endhead} \hlstd{=} \hlnum{TRUE}\hlstd{)}
+\hlstd{lab} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlstr{"Problem"}\hlstd{,} \hlstr{"Conceptual model"}\hlstd{,} \hlstr{"Mathematical model"}\hlstd{,}
+    \hlstr{"Parameterisation"}\hlstd{,} \hlstr{"Mathematical solution"}\hlstd{,} \hlstr{""}\hlstd{,} \hlstr{"OK?"}\hlstd{,} \hlstr{"Prediction, Analysis"}\hlstd{)}
+
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlkwd{c}\hlstd{(}\hlnum{1}\hlopt{:}\hlnum{5}\hlstd{,} \hlnum{8}\hlstd{))} \hlkwd{textround}\hlstd{(elpos[i, ], sx[i], sy[i],} \hlkwc{lab} \hlstd{= lab[i])}
+
+\hlkwd{textround}\hlstd{(elpos[}\hlnum{6}\hlstd{, ], xx, yy} \hlopt{*} \hlnum{1.5}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"Calibration,sensitivity"}\hlstd{,}
+    \hlstr{"Verification,validation"}\hlstd{))}
+\hlkwd{textdiamond}\hlstd{(elpos[}\hlnum{7}\hlstd{, ], sx[}\hlnum{7}\hlstd{], sy[}\hlnum{7}\hlstd{],} \hlkwc{lab} \hlstd{= lab[}\hlnum{7}\hlstd{])}
+
+\hlkwd{textplain}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{0.7}\hlstd{, elpos[}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{]), yy} \hlopt{*} \hlnum{2}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"main components"}\hlstd{,}
+    \hlstr{"relationships"}\hlstd{),} \hlkwc{font} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{adj} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0.5}\hlstd{))}
+\hlkwd{textplain}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{0.7}\hlstd{, elpos[}\hlnum{3}\hlstd{,} \hlnum{2}\hlstd{]), yy,} \hlstr{"general theory"}\hlstd{,} \hlkwc{adj} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,}
+    \hlnum{0.5}\hlstd{),} \hlkwc{font} \hlstd{=} \hlnum{3}\hlstd{)}
+\hlkwd{textplain}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{0.7}\hlstd{, elpos[}\hlnum{4}\hlstd{,} \hlnum{2}\hlstd{]), yy} \hlopt{*} \hlnum{2}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"literature"}\hlstd{,}
+    \hlstr{"measurements"}\hlstd{),} \hlkwc{font} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{adj} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0.5}\hlstd{))}
+\hlkwd{textplain}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{0.7}\hlstd{, elpos[}\hlnum{6}\hlstd{,} \hlnum{2}\hlstd{]), yy} \hlopt{*} \hlnum{2}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"field data"}\hlstd{,}
+    \hlstr{"lab measurements"}\hlstd{),} \hlkwc{font} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{adj} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0.5}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart1} 
+\begin{kframe}\begin{alltt}
+\hlcom{##### DIAGRAM}
+
+\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{))}
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{4}\hlstd{))}
+\hlstd{fromto} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{ncol} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{byrow} \hlstd{=} \hlnum{TRUE}\hlstd{,} \hlkwc{data} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{3}\hlstd{,}
+    \hlnum{2}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{7}\hlstd{,} \hlnum{4}\hlstd{,} \hlnum{8}\hlstd{))}
+\hlstd{nr} \hlkwb{<-} \hlkwd{nrow}\hlstd{(fromto)}
+\hlstd{arrpos} \hlkwb{<-} \hlkwd{matrix}\hlstd{(}\hlkwc{ncol} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{nrow} \hlstd{= nr)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlstd{nr) arrpos[i, ]} \hlkwb{<-} \hlkwd{straightarrow}\hlstd{(}\hlkwc{to} \hlstd{= elpos[fromto[i,}
+    \hlnum{2}\hlstd{], ],} \hlkwc{from} \hlstd{= elpos[fromto[i,} \hlnum{1}\hlstd{], ],} \hlkwc{lwd} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{arr.pos} \hlstd{=} \hlnum{0.6}\hlstd{,}
+    \hlkwc{arr.length} \hlstd{=} \hlnum{0.5}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(elpos[}\hlnum{1}\hlstd{, ],} \hlnum{0.1}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlstr{"start"}\hlstd{,} \hlkwc{box.col} \hlstd{=} \hlstr{"green"}\hlstd{,}
+    \hlkwc{shadow.col} \hlstd{=} \hlstr{"darkgreen"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textrect}\hlstd{(elpos[}\hlnum{2}\hlstd{, ],} \hlnum{0.15}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlstr{"found term?"}\hlstd{,} \hlkwc{box.col} \hlstd{=} \hlstr{"blue"}\hlstd{,}
+    \hlkwc{shadow.col} \hlstd{=} \hlstr{"darkblue"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textrect}\hlstd{(elpos[}\hlnum{4}\hlstd{, ],} \hlnum{0.15}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlstr{"related?"}\hlstd{,} \hlkwc{box.col} \hlstd{=} \hlstr{"blue"}\hlstd{,}
+    \hlkwc{shadow.col} \hlstd{=} \hlstr{"darkblue"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(elpos[}\hlnum{3}\hlstd{, ],} \hlnum{0.1}\hlstd{,} \hlnum{0.1}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"other"}\hlstd{,} \hlstr{"term"}\hlstd{),} \hlkwc{box.col} \hlstd{=} \hlstr{"orange"}\hlstd{,}
+    \hlkwc{shadow.col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(elpos[}\hlnum{3}\hlstd{, ],} \hlnum{0.1}\hlstd{,} \hlnum{0.1}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"other"}\hlstd{,} \hlstr{"term"}\hlstd{),} \hlkwc{box.col} \hlstd{=} \hlstr{"orange"}\hlstd{,}
+    \hlkwc{shadow.col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(elpos[}\hlnum{7}\hlstd{, ],} \hlnum{0.1}\hlstd{,} \hlnum{0.1}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"make"}\hlstd{,} \hlstr{"a link"}\hlstd{),}
+    \hlkwc{box.col} \hlstd{=} \hlstr{"orange"}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,}
+    \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(elpos[}\hlnum{8}\hlstd{, ],} \hlnum{0.1}\hlstd{,} \hlnum{0.1}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"new"}\hlstd{,} \hlstr{"article"}\hlstd{),}
+    \hlkwc{box.col} \hlstd{=} \hlstr{"orange"}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"red"}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.005}\hlstd{,}
+    \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+
+\hlstd{dd} \hlkwb{<-} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0.025}\hlstd{)}
+\hlkwd{text}\hlstd{(arrpos[}\hlnum{2}\hlstd{,} \hlnum{1}\hlstd{]} \hlopt{+} \hlnum{0.05}\hlstd{, arrpos[}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{],} \hlstr{"yes"}\hlstd{)}
+\hlkwd{text}\hlstd{(arrpos[}\hlnum{3}\hlstd{,} \hlnum{1}\hlstd{]} \hlopt{-} \hlnum{0.05}\hlstd{, arrpos[}\hlnum{3}\hlstd{,} \hlnum{2}\hlstd{],} \hlstr{"no"}\hlstd{)}
+\hlkwd{text}\hlstd{(arrpos[}\hlnum{4}\hlstd{,} \hlnum{1}\hlstd{]} \hlopt{+} \hlnum{0.05}\hlstd{, arrpos[}\hlnum{4}\hlstd{,} \hlnum{2}\hlstd{]} \hlopt{+} \hlnum{0.05}\hlstd{,} \hlstr{"yes"}\hlstd{)}
+\hlkwd{text}\hlstd{(arrpos[}\hlnum{5}\hlstd{,} \hlnum{1}\hlstd{]} \hlopt{-} \hlnum{0.05}\hlstd{, arrpos[}\hlnum{5}\hlstd{,} \hlnum{2}\hlstd{]} \hlopt{+} \hlnum{0.05}\hlstd{,} \hlstr{"no"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart2} 
+\begin{kframe}\begin{alltt}
+\hlcom{##### }
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{0}\hlstd{))}
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{3}\hlstd{))}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlopt{:}\hlnum{2}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{3}\hlopt{:}\hlnum{5}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{path} \hlstd{=} \hlstr{"H"}\hlstd{)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{)} \hlkwd{textrect}\hlstd{(elpos[i, ],} \hlnum{0.15}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{= i,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{3}\hlstd{,} \hlnum{2}\hlstd{),} \hlkwc{hor} \hlstd{=} \hlnum{FALSE}\hlstd{)}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlopt{:}\hlnum{3}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{4}\hlopt{:}\hlnum{5}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{arr.pos} \hlstd{=} \hlnum{0.2}\hlstd{,} \hlkwc{path} \hlstd{=} \hlstr{"V"}\hlstd{)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{)} \hlkwd{textrect}\hlstd{(elpos[i, ],} \hlnum{0.15}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{= i,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{4}\hlstd{))}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlopt{:}\hlnum{5}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{arr.pos} \hlstd{=} \hlnum{0.7}\hlstd{,} \hlkwc{path} \hlstd{=} \hlstr{"H"}\hlstd{)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{5}\hlstd{)} \hlkwd{textrect}\hlstd{(elpos[i, ],} \hlnum{0.05}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{= i,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{3}\hlstd{))}
+\hlstd{elpos[}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{]} \hlkwb{<-} \hlnum{0.3}
+\hlstd{elpos[}\hlnum{2}\hlstd{,} \hlnum{1}\hlstd{]} \hlkwb{<-} \hlnum{0.7}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlopt{:}\hlnum{3}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{4}\hlopt{:}\hlnum{8}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{path} \hlstd{=} \hlstr{"H"}\hlstd{)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{8}\hlstd{)} \hlkwd{bentarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[i, ],} \hlkwc{to} \hlstd{= elpos[i, ]} \hlopt{+}
+    \hlkwd{c}\hlstd{(}\hlnum{0.1}\hlstd{,} \hlopt{-}\hlnum{0.05}\hlstd{),} \hlkwc{arr.pos} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{arr.type} \hlstd{=} \hlstr{"circle"}\hlstd{,} \hlkwc{arr.col} \hlstd{=} \hlstr{"white"}\hlstd{,}
+    \hlkwc{arr.length} \hlstd{=} \hlnum{0.2}\hlstd{)}
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{8}\hlstd{)} \hlkwd{textrect}\hlstd{(elpos[i, ],} \hlnum{0.05}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{= i,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\hlkwd{mtext}\hlstd{(}\hlkwc{side} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{outer} \hlstd{=} \hlnum{TRUE}\hlstd{,} \hlkwc{line} \hlstd{=} \hlopt{-}\hlnum{2}\hlstd{,} \hlstr{"treearrow"}\hlstd{,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart3} 
+\begin{kframe}\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{))}
+
+\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{0}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{0}\hlstd{,} \hlnum{0}\hlstd{))}
+\hlkwd{openplotmat}\hlstd{()}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{1}\hlstd{))}
+\hlkwd{straightarrow}\hlstd{(}\hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ])}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{3}\hlopt{:}\hlnum{4}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{path} \hlstd{=} \hlstr{"H"}\hlstd{)}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{3}\hlopt{:}\hlnum{4}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{5}\hlstd{, ],} \hlkwc{arr.side} \hlstd{=} \hlnum{2}\hlstd{,}
+    \hlkwc{path} \hlstd{=} \hlstr{"H"}\hlstd{)}
+\hlkwd{segmentarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{5}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{dd} \hlstd{=} \hlnum{0.4}\hlstd{)}
+\hlkwd{curvedarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{5}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{curve} \hlstd{=} \hlnum{0.8}\hlstd{)}
+\hlstd{col} \hlkwb{<-} \hlkwd{femmecol}\hlstd{(}\hlnum{5}\hlstd{)}
+\hlkwd{texthexa}\hlstd{(}\hlkwc{mid} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{radx} \hlstd{=} \hlnum{0.1}\hlstd{,} \hlkwc{angle} \hlstd{=} \hlnum{20}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.01}\hlstd{,}
+    \hlkwc{rady} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{box.col} \hlstd{= col[}\hlnum{1}\hlstd{])}
+\hlkwd{textrect}\hlstd{(}\hlkwc{mid} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{radx} \hlstd{=} \hlnum{0.1}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.01}\hlstd{,} \hlkwc{rady} \hlstd{=} \hlnum{0.05}\hlstd{,}
+    \hlkwc{lab} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{box.col} \hlstd{= col[}\hlnum{2}\hlstd{])}
+\hlkwd{textround}\hlstd{(}\hlkwc{mid} \hlstd{= elpos[}\hlnum{3}\hlstd{, ],} \hlkwc{radx} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.01}\hlstd{,}
+    \hlkwc{rady} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{box.col} \hlstd{= col[}\hlnum{3}\hlstd{])}
+\hlkwd{textellipse}\hlstd{(}\hlkwc{mid} \hlstd{= elpos[}\hlnum{4}\hlstd{, ],} \hlkwc{radx} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.01}\hlstd{,}
+    \hlkwc{rady} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlnum{4}\hlstd{,} \hlkwc{box.col} \hlstd{= col[}\hlnum{4}\hlstd{])}
+\hlkwd{textellipse}\hlstd{(}\hlkwc{mid} \hlstd{= elpos[}\hlnum{5}\hlstd{, ],} \hlkwc{radx} \hlstd{=} \hlnum{0.05}\hlstd{,} \hlkwc{shadow.size} \hlstd{=} \hlnum{0.01}\hlstd{,}
+    \hlkwc{rady} \hlstd{=} \hlnum{0.08}\hlstd{,} \hlkwc{angle} \hlstd{=} \hlnum{45}\hlstd{,} \hlkwc{lab} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{box.col} \hlstd{= col[}\hlnum{5}\hlstd{])}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart4} 
+\begin{kframe}\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mar} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{))}
+\hlkwd{openplotmat}\hlstd{(}\hlkwc{main} \hlstd{=} \hlstr{"Arrowtypes"}\hlstd{)}
+\hlstd{elpos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{2}\hlstd{,} \hlnum{1}\hlstd{),} \hlkwc{mx} \hlstd{=} \hlnum{0.1}\hlstd{,} \hlkwc{my} \hlstd{=} \hlopt{-}\hlnum{0.1}\hlstd{)}
+\hlkwd{curvedarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{curve} \hlstd{=} \hlopt{-}\hlnum{0.5}\hlstd{,}
+    \hlkwc{lty} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{2}\hlstd{)}
+\hlkwd{straightarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{lty} \hlstd{=} \hlnum{3}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{3}\hlstd{)}
+\hlkwd{segmentarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlstd{, ],} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{1}\hlstd{)}
+\hlkwd{treearrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{2}\hlopt{:}\hlnum{3}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{4}\hlstd{, ],} \hlkwc{lty} \hlstd{=} \hlnum{4}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{4}\hlstd{)}
+\hlkwd{bentarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{3}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{3}\hlstd{, ]} \hlopt{-} \hlkwd{c}\hlstd{(}\hlnum{0.1}\hlstd{,} \hlnum{0.1}\hlstd{),} \hlkwc{arr.pos} \hlstd{=} \hlnum{1}\hlstd{,}
+    \hlkwc{lty} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{5}\hlstd{)}
+\hlkwd{bentarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{3}\hlstd{, ],} \hlkwc{lty} \hlstd{=} \hlnum{5}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{5}\hlstd{)}
+\hlkwd{selfarrow}\hlstd{(}\hlkwc{pos} \hlstd{= elpos[}\hlnum{3}\hlstd{, ],} \hlkwc{path} \hlstd{=} \hlstr{"R"}\hlstd{,} \hlkwc{lty} \hlstd{=} \hlnum{6}\hlstd{,} \hlkwc{curve} \hlstd{=} \hlnum{0.075}\hlstd{,}
+    \hlkwc{lcol} \hlstd{=} \hlnum{6}\hlstd{)}
+\hlkwd{splitarrow}\hlstd{(}\hlkwc{from} \hlstd{= elpos[}\hlnum{1}\hlstd{, ],} \hlkwc{to} \hlstd{= elpos[}\hlnum{2}\hlopt{:}\hlnum{3}\hlstd{, ],} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlstd{,} \hlkwc{lwd} \hlstd{=} \hlnum{1}\hlstd{,}
+    \hlkwc{dd} \hlstd{=} \hlnum{0.7}\hlstd{,} \hlkwc{arr.side} \hlstd{=} \hlnum{1}\hlopt{:}\hlnum{2}\hlstd{,} \hlkwc{lcol} \hlstd{=} \hlnum{7}\hlstd{)}
+
+\hlkwa{for} \hlstd{(i} \hlkwa{in} \hlnum{1}\hlopt{:}\hlnum{4}\hlstd{)} \hlkwd{textrect}\hlstd{(elpos[i, ],} \hlnum{0.05}\hlstd{,} \hlnum{0.05}\hlstd{,} \hlkwc{lab} \hlstd{= i,} \hlkwc{cex} \hlstd{=} \hlnum{1.5}\hlstd{)}
+
+\hlkwd{legend}\hlstd{(}\hlstr{"topright"}\hlstd{,} \hlkwc{lty} \hlstd{=} \hlnum{1}\hlopt{:}\hlnum{7}\hlstd{,} \hlkwc{legend} \hlstd{=} \hlkwd{c}\hlstd{(}\hlstr{"segmentarrow"}\hlstd{,} \hlstr{"curvedarrow"}\hlstd{,}
+    \hlstr{"straightarrow"}\hlstd{,} \hlstr{"treearrow"}\hlstd{,} \hlstr{"bentarrow"}\hlstd{,} \hlstr{"selfarrow"}\hlstd{,} \hlstr{"splitarrow"}\hlstd{),}
+    \hlkwc{lwd} \hlstd{=} \hlkwd{c}\hlstd{(}\hlkwd{rep}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{6}\hlstd{),} \hlnum{1}\hlstd{),} \hlkwc{col} \hlstd{=} \hlnum{1}\hlopt{:}\hlnum{7}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart5} 
+\begin{kframe}\begin{alltt}
+\hlkwd{openplotmat}\hlstd{(}\hlkwc{main} \hlstd{=} \hlstr{"textbox shapes"}\hlstd{)}
+\hlstd{rx} \hlkwb{<-} \hlnum{0.1}
+\hlstd{ry} \hlkwb{<-} \hlnum{0.05}
+\hlstd{pos} \hlkwb{<-} \hlkwd{coordinates}\hlstd{(}\hlkwd{c}\hlstd{(}\hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{),} \hlkwc{mx} \hlstd{=} \hlopt{-}\hlnum{0.2}\hlstd{)}
+\hlkwd{textdiamond}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{1}\hlstd{, ],} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{1}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"lightblue"}\hlstd{)}
+\hlkwd{textellipse}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{2}\hlstd{, ],} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{2}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"blue"}\hlstd{)}
+\hlkwd{texthexa}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{3}\hlstd{, ],} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{3}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"darkblue"}\hlstd{)}
+\hlkwd{textmulti}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{4}\hlstd{, ],} \hlkwc{nr} \hlstd{=} \hlnum{7}\hlstd{,} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{4}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"red"}\hlstd{)}
+\hlkwd{textrect}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{5}\hlstd{, ],} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{5}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"darkred"}\hlstd{)}
+\hlkwd{textround}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{6}\hlstd{, ],} \hlkwc{radx} \hlstd{= rx,} \hlkwc{rady} \hlstd{= ry,} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{6}\hlstd{],}
+    \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{shadow.col} \hlstd{=} \hlstr{"black"}\hlstd{)}
+\hlkwd{textempty}\hlstd{(}\hlkwc{mid} \hlstd{= pos[}\hlnum{7}\hlstd{, ],} \hlkwc{lab} \hlstd{= LETTERS[}\hlnum{7}\hlstd{],} \hlkwc{cex} \hlstd{=} \hlnum{2}\hlstd{,} \hlkwc{box.col} \hlstd{=} \hlstr{"yellow"}\hlstd{)}
+\hlstd{pos[,} \hlnum{1}\hlstd{]} \hlkwb{<-} \hlstd{pos[,} \hlnum{1}\hlstd{]} \hlopt{+} \hlnum{0.5}
+\hlkwd{text}\hlstd{(pos[,} \hlnum{1}\hlstd{], pos[,} \hlnum{2}\hlstd{],} \hlkwd{c}\hlstd{(}\hlstr{"textdiamond"}\hlstd{,} \hlstr{"textellipse"}\hlstd{,} \hlstr{"texthexa"}\hlstd{,}
+    \hlstr{"textmulti"}\hlstd{,} \hlstr{"textrect"}\hlstd{,} \hlstr{"textround"}\hlstd{,} \hlstr{"textempty"}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart6} 
+\begin{kframe}\begin{alltt}
+\hlstd{mf} \hlkwb{<-} \hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\hlkwd{example}\hlstd{(bentarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## bntrrw> openplotmat(main = "bentarrow")
+## 
+## bntrrw> pos <- cbind( A <- seq(0.1, 0.9, by = 0.2), rev(A))
+## 
+## bntrrw> text(pos, LETTERS[1:5], cex = 2)
+## 
+## bntrrw> for (i in 1:4) 
+## bntrrw+   bentarrow(from = pos[i,] + c(0.05, 0), to = pos[i+1,] + c(0, 0.05),
+## bntrrw+             arr.pos = 1, arr.adj = 1)
+## 
+## bntrrw> for (i in 1:2) 
+## bntrrw+   bentarrow(from = pos[i,] + c(0.05, 0), to = pos[i+1, ] + c(0, 0.05),
+## bntrrw+             arr.pos = 0.5, path = "V", lcol = "lightblue", 
+## bntrrw+             arr.type = "triangle")
+## 
+## bntrrw> bentarrow(from = pos[3, ] + c(0.05, 0), to = pos[4, ] + c(0, 0.05),
+## bntrrw+           arr.pos = 0.7, arr.side = 1, path = "V", lcol = "darkblue")
+## 
+## bntrrw> bentarrow(from = pos[4, ] + c(0.05, 0), to = pos[5, ] + c(0, 0.05),
+## bntrrw+           arr.pos = 0.7, arr.side = 1:2, path = "V", lcol = "blue")
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(coordinates)}
+\end{alltt}
+\begin{verbatim}
+## 
+## crdnts> openplotmat(main = "coordinates")
+## 
+## crdnts> text(coordinates(N = 6), lab = LETTERS[1:6], cex = 2)
+## 
+## crdnts> text(coordinates(N = 8, relsize = 0.5), lab = letters[1:8], cex = 2)
+## 
+## crdnts> openplotmat(main = "coordinates")
+## 
+## crdnts> text(coordinates(pos = c(2, 4, 2)), lab = letters[1:8], cex = 2)
+## 
+## crdnts> plot(0, type = "n", xlim = c(0, 5), ylim = c(2, 8), main = "coordinates")
+\end{verbatim}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart7} 
+\begin{kframe}\begin{verbatim}
+## 
+## crdnts> text(coordinates(pos = c(2, 4, 3), hor = FALSE), lab = 1:9, cex = 2)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\hlkwd{example}\hlstd{(curvedarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## crvdrr> openplotmat(main = "curvedarrow")
+## 
+## crvdrr> pos <- coordinates(pos = 4, my = 0.2)
+## 
+## crvdrr> text(pos, LETTERS[1:4], cex = 2)
+## 
+## crvdrr> for (i in 1:3) 
+## crvdrr+   curvedarrow(from = pos[1, ] + c(0,-0.05), to = pos[i+1, ] + c(0,-0.05),
+## crvdrr+               curve = 0.5, arr.pos = 1)
+## 
+## crvdrr> for (i in 1:3) 
+## crvdrr+   curvedarrow(from = pos[1, ] + c(0, 0.05), to = pos[i+1, ] + c(0, 0.05),
+## crvdrr+               curve = -0.25, arr.adj = 1, arr.pos = 0.5, 
+## crvdrr+               arr.type = "triangle", arr.col = "blue")
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(segmentarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## sgmntr> openplotmat(main="segmentarrow")
+## 
+## sgmntr> pos <-cbind(A <- seq(0.2, 0.8, by = 0.2), rev(A))
+## 
+## sgmntr> text(pos, LETTERS[1:4], cex = 2)
+## 
+## sgmntr> segmentarrow(from = pos[1, ] + c(0, 0.05), to = pos[2, ] + c(0, 0.05),
+## sgmntr+              arr.pos = 1, arr.adj = 1, dd = 0.1, 
+## sgmntr+              path = "UHD", lcol = "darkred")
+## 
+## sgmntr> segmentarrow(from = pos[2, ] + c(-0.05, 0), to = pos[3, ] + c(-0.05, 0.01),
+## sgmntr+              arr.pos = 1, arr.adj = 1, dd = 0.1,
+## sgmntr+              lcol = "black", arr.type = "triangle")
+## 
+## sgmntr> segmentarrow(from = pos[2, ] + c(0.05, 0), to = pos[3, ] + c(0.05, 0.01),
+## sgmntr+              arr.pos = 0.5, dd = 0.3, path = "RVL", arr.side = 1,
+## sgmntr+              lcol = "lightblue", arr.type = "simple")  
+## 
+## sgmntr> segmentarrow(from = pos[3, ] + c(0.05, 0), to = pos[4, ] + c(-0.05, 0.01),
+## sgmntr+              arr.pos = 0.5, dd = 0.05, path = "RVL", lcol = "darkblue",
+## sgmntr+              arr.type = "ellipse")  
+## 
+## sgmntr> segmentarrow(from = pos[3, ] + c(0, -0.05), to = pos[4, ] + c(0, 0.05),
+## sgmntr+              arr.pos = 0.5, arr.side = 3, dd = 0.05, path = "DHU",
+## sgmntr+              lcol = "darkgreen")  
+## 
+## sgmntr> segmentarrow(from = pos[3,] + c(-0.05, -0.05), to = pos[4, ] + c(0, -0.05),
+## sgmntr+              arr.pos = 0.5, arr.side = 1:3, dd = 0.3, path = "DHU",
+## sgmntr+              lcol = "green")
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(selfarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## slfrrw> openplotmat(main = "selfarrow")
+## 
+## slfrrw> pos <- coordinates(3, mx = 0.05)
+## 
+## slfrrw> text(pos, LETTERS[1:3], cex = 2)
+## 
+## slfrrw> for (i in 1:3) 
+## slfrrw+   selfarrow(pos = pos[i, ], path = "R", arr.pos = 0.2,
+## slfrrw+             curve = c(0.05, 0.1), lcol = "darkred")
+## 
+## slfrrw> for (i in 1:3) 
+## slfrrw+   selfarrow(pos = pos[i, ], path = "L", arr.pos = 0.7,
+## slfrrw+             lcol = "darkblue", curve = c(0.05, 0.05))
+## 
+## slfrrw> for (i in 1:3) 
+## slfrrw+   selfarrow(pos = pos[i, ], path = "L", arr.pos = 0.5,
+## slfrrw+             lcol = "darkgreen", code = i, arr.type = "triangle")
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(straightarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## strght> openplotmat(main = "straightarrow")
+\end{verbatim}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart8} 
+\begin{kframe}\begin{verbatim}
+## 
+## strght> pos <- coordinates(c(2, 3, 1))
+## 
+## strght> for (i in 1:5) 
+## strght+   straightarrow(from = pos[i, ], to = pos[i+1, ], arr.pos = 0.5)
+## 
+## strght> straightarrow(from = pos[6, ], to = pos[6, ] + c(0.3, 0.), 
+## strght+               arr.type = "T", arr.pos = 1, arr.lwd = 3)    
+## 
+## strght> for (i in 1:6) 
+## strght+   textrect(pos[i, ], lab = LETTERS[i], radx = 0.05)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\hlkwd{example}\hlstd{(treearrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## trerrw> openplotmat(main = "treearrow")
+## 
+## trerrw> pos <- coordinates(c(3, 2, 4, 1))
+## 
+## trerrw> treearrow(from = pos[1:5, ], to = pos[6:10, ])
+## 
+## trerrw> for (i in 1:10) 
+## trerrw+   textrect(pos[i, ], lab = i, cex = 2, radx = 0.05)
+## 
+## trerrw> openplotmat(main = "treearrow")
+## 
+## trerrw> pos <- coordinates(c(2, 4), hor = FALSE)
+## 
+## trerrw> treearrow(from = pos[1:2, ], to = pos[3:6, ], 
+## trerrw+           arr.side = 1:2, path = "V")
+## 
+## trerrw> for (i in 1:6) 
+## trerrw+   textrect(pos[i, ], lab = i, cex = 2, radx = 0.05)
+## 
+## trerrw> openplotmat(main = "treearrow")
+## 
+## trerrw> pos <- coordinates(c(3, 5, 7, 7, 5, 3))
+## 
+## trerrw> treearrow(from = pos[1:15, ], to = pos[15:30, ], arr.side = 0)
+## 
+## trerrw> for (i in 1:30) 
+## trerrw+   textrect(pos[i, ], lab = i, cex = 1.2, radx = 0.025)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart9} 
+\begin{kframe}\begin{alltt}
+\hlkwd{example}\hlstd{(splitarrow)}
+\end{alltt}
+\begin{verbatim}
+## 
+## spltrr> openplotmat(main = "splitarrow")
+## 
+## spltrr> pos <- coordinates(c(1, 2, 2, 4, 1))
+## 
+## spltrr> splitarrow(from = pos[1, ], to = pos[2:10, ], 
+## spltrr+            arr.side = 1, centre = c(0.5, 0.625))
+## 
+## spltrr> for (i in 1:10) 
+## spltrr+   textrect(pos[i, ], lab = i, cex = 2, radx = 0.05)
+## 
+## spltrr> openplotmat(main = "splitarrow")
+## 
+## spltrr> pos <- coordinates(c(1, 3))
+## 
+## spltrr> splitarrow(from = pos[1,], to = pos[2:4, ], arr.side = 1)
+## 
+## spltrr> splitarrow(from = pos[1,], to = pos[2:4, ], arr.side = 2)
+## 
+## spltrr> for (i in 1:4) 
+## spltrr+   textrect(pos[i, ], lab = i, cex = 2, radx = 0.05)
+## 
+## spltrr> openplotmat(main = "splitarrow")
+## 
+## spltrr> pos <- coordinates(N = 6)
+## 
+## spltrr> pos <- rbind(c(0.5, 0.5), pos)
+## 
+## spltrr> splitarrow(from = pos[1, ], to = pos[2:7, ], arr.side = 2)
+## 
+## spltrr> for (i in 1:7)
+## spltrr+   textrect(pos[i, ], lab = i, cex = 2, radx = 0.05)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{2}\hlstd{,} \hlnum{2}\hlstd{))}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart10} 
+\begin{kframe}\begin{alltt}
+\hlkwd{example}\hlstd{(textdiamond)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtdmn> openplotmat(xlim = c(-0.1, 1.1), main = "textdiamond")
+## 
+## txtdmn> for (i in 1:10) 
+## txtdmn+   textdiamond(mid = runif(2), col = i, radx = 0.1, rady = 0.05,
+## txtdmn+               lab = LETTERS[i], cex = 2, angle = runif(1)*360)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textellipse)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtllp> openplotmat(xlim = c(-0.1, 1.1), main = "textellipse")
+## 
+## txtllp> for (i in 1:10) 
+## txtllp+   textellipse(mid = runif(2), col = i, box.col = grey(0.95),
+## txtllp+               radx = 0.1, rady = 0.05, lab = LETTERS[i],
+## txtllp+               cex = 2, angle = runif(1)*360)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textempty)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtmpt> openplotmat(xlim = c(-0.1, 1.1), col = "lightgrey", main = "textempty")
+## 
+## txtmpt> for (i in 1:10) 
+## txtmpt+   textempty(mid = runif(2), box.col = i, lab = LETTERS[i], cex = 2)
+## 
+## txtmpt> textempty(mid = c(0.5, 0.5), adj = c(0, 0), 
+## txtmpt+   lab = "textempty", box.col = "white")
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(texthexa)}
+\end{alltt}
+\begin{verbatim}
+## 
+## texthx>   openplotmat(xlim = c(-0.1, 1.1), main = "texthexa")
+\end{verbatim}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart11} 
+\begin{kframe}\begin{verbatim}
+## 
+## texthx>   for (i in 1:20) 
+## texthx+     texthexa(mid = runif(2), angle = runif(1)*360, col = i,
+## texthx+              box.col = grey(0.95), radx = 0.1, rady = 0.05,
+## texthx+              lab = LETTERS[i], cex = 2)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textmulti)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtmlt>   openplotmat(xlim = c(-0.1, 1.1), main = "textmulti")
+## 
+## txtmlt>   for (i in 1:10) 
+## txtmlt+     textmulti(mid = runif(2), col = i, radx = 0.1, rady = 0.1,
+## txtmlt+              lab = LETTERS[i], cex = 2, nr = trunc(i/1.5)+3)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textplain)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtpln>   openplotmat(main = "textplain")
+## 
+## txtpln>   textplain(mid = c(0.5, 0.5), 
+## txtpln+             lab = c("this text is", "centered", "4 strings", "on 4 lines"))
+## 
+## txtpln>   textplain(mid = c(0.5, 0.2), adj = c(0, 0.5), font = 2, height = 0.05,
+## txtpln+             lab = c("this text is","left alligned"))
+## 
+## txtpln>   textplain(mid = c(0.5, 0.8), adj = c(1, 0.5), font = 3, height = 0.05, 
+## txtpln+             lab = c("this text is","right alligned"))
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textrect)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtrct>   openplotmat(xlim = c(-0.1, 1.1), main = "textrect")
+## 
+## txtrct>   for (i in 1:10) 
+## txtrct+     textrect(mid = runif(2), col = i, radx = 0.1, rady = 0.1,
+## txtrct+             lab = LETTERS[i], cex = 2)
+## 
+## txtrct>   openplotmat(xlim = c(-0.1, 1.1), main = "textparallel")
+\end{verbatim}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart12} 
+\begin{kframe}\begin{verbatim}
+## 
+## txtrct>   elpos <-coordinates (c(1, 1, 1, 1, 1))
+## 
+## txtrct>   textparallel(mid = elpos[1,], col = 1, radx = 0.2, rady = 0.1,
+## txtrct+             lab = "theta=20", theta = 20)
+## 
+## txtrct>   textparallel(mid = elpos[2,], col = 1, radx = 0.2, rady = 0.1,
+## txtrct+             lab = "theta=60", theta = 60)
+## 
+## txtrct>   textparallel(mid = elpos[3,], col = 1, radx = 0.2, rady = 0.1,
+## txtrct+             lab = "theta=100", theta = 100)
+## 
+## txtrct>   textparallel(mid = elpos[4,], col = 1, radx = 0.2, rady = 0.1,
+## txtrct+             lab = "theta=140", theta = 140)
+## 
+## txtrct>   textparallel(mid = elpos[5,], col = 1, radx = 0.2, rady = 0.1,
+## txtrct+             lab = "theta=170", theta = 170)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{example}\hlstd{(textround)}
+\end{alltt}
+\begin{verbatim}
+## 
+## txtrnd>   openplotmat(xlim = c(-0.1, 1.1), main = "textround")
+## 
+## txtrnd>   for (i in 1:10) 
+## txtrnd+     textround(mid = runif(2), col = i, 
+## txtrnd+               radx = 0.03, rady = 0.075,
+## txtrnd+               lab = LETTERS[i], cex = 2)
+\end{verbatim}
+\begin{alltt}
+\hlkwd{par}\hlstd{(}\hlkwc{mfrow} \hlstd{= mf)}
+\end{alltt}
+\end{kframe}
+\includegraphics[width=\maxwidth]{figure/051-flowchart-demo-flowchart13} 
+
+\end{knitrout}
+\end{document}

@@ -1,0 +1,19 @@
+\documentclass{ctexart}
+\begin{document}
+
+中文测试。
+
+<<test, tidy=FALSE>>=
+# 中文哈哈
+1+1 # 行内注释
+'还是我'
+@
+
+\Sexpr{'仍然是'}中文，然后这里有\Sexpr{rep('很多',10)}中文。
+
+<<test>>=
+@
+
+本文档编码为GBK。
+
+\end{document}

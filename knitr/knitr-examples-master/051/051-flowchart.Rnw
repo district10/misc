@@ -1,0 +1,9 @@
+\documentclass{article}
+\begin{document}
+<<read-demo>>=
+library(diagram)
+read_demo('flowchart', package = 'diagram',
+          labels = 'demo-flowchart')
+<<demo-flowchart, dev='tikz', cache=TRUE, tidy.opts=list(width=60)>>=
+@
+\end{document}
