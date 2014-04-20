@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage{Sweave}
+\begin{document}
+\input{013-par-concordance}
+
+\begin{Schunk}
+\begin{Sinput}
+> knit_hooks$set(pars = function(before, options, envir) {
++   if (before) do.call(graphics::par, options$pars)
++ })

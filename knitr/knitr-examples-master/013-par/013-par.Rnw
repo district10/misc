@@ -1,5 +1,6 @@
 \documentclass{article}
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 <<setup>>=
 knit_hooks$set(pars = function(before, options, envir) {

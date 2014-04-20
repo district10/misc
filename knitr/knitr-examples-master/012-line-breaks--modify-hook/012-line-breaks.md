@@ -4,7 +4,9 @@ This is what you normally see in the output:
 
 
 ```r
-x = "this is a long long\nstring with several\nlines"
+x = 'this is a long long
+string with several
+lines'
 ```
 
 Modify the `source` hook:
@@ -15,7 +17,7 @@ Now we test the `source` hook:
 
 
 ```r
-x = "this is a long long
+x = 'this is a long long
 string with several
-lines"
+lines'
 ```
