@@ -2,6 +2,7 @@
 \usepackage[T1]{fontenc}
 
 \begin{document}
+\SweaveOpts{concordance=TRUE}
 
 Here is a code chunk.
 

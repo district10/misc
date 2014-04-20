@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+.knitr.inline {
+  background-color: #f7f7f7;
+  border:solid 1px #B0B0B0;
+}
+.error {
+	font-weight: bold;
+	color: #FF0000;
+},
+.warning {
+	font-weight: bold;
+}
+.message {
+	font-style: italic;
+}
+.source, .output, .warning, .error, .message {
+	padding: 0em 1em;
+  border:solid 1px #F7F7F7;
+}
+.source {
+  background-color: #f5f5f5;
+}
+.rimage.left {
+  text-align: left;
+}
+.rimage.right {
+  text-align: right;
+}
+.rimage.center {
+  text-align: center;
+}
+.hl.num {
+  color: #AF0F91;
+}
+.hl.str {
+  color: #317ECC;
+}
+.hl.com {
+  color: #AD95AF;
+  font-style: italic;
+}
+.hl.opt {
+  color: #000000;
+}
+.hl.std {
+  color: #585858;
+}
+.hl.kwa {
+  color: #295F94;
+  font-weight: bold;
+}
+.hl.kwb {
+  color: #B05A65;
+}
+.hl.kwc {
+  color: #55aa55;
+}
+.hl.kwd {
+  color: #BC5A65;
+  font-weight: bold;
+}
+</style>
+  <title>A minimal knitr example in HTML</title>
+</head>
+<body>
+<div class="chunk" id="unnamed-chunk-1"><div class="rcode"><div class="source"><pre class="knitr r">  opts_chunk$<span class="hl kwd">set</span>(fig.width=5, fig.height=5)
+</pre></div>
+</div></div>
+
+  <p>This is a minimal example which shows <strong>knitr</strong>
+  working with HTML
+  pages. See <a href="https://bitbucket.org/stat/knitr/downloads/003-minimal.html">here</a>
+  for the output and
+  <a href="https://github.com/yihui/knitr-examples/blob/master/003-minimal.Rhtml">here</a>
+  for the source.</p>
+
+  <p>Boring stuff as usual:</p>
+
+<div class="chunk" id="unnamed-chunk-2"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl com">## a simple calculator</span>
+    1+1
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] 2
+</pre></div>
+<div class="source"><pre class="knitr r">    <span class="hl com">## boring random numbers</span>
+    <span class="hl kwd">set.seed</span>(123)
+    <span class="hl kwd">rnorm</span>(5)
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] -0.56048 -0.23018  1.55871  0.07051  0.12929
+</pre></div>
+</div></div>
+
+  <p>We can also produce plots (centered by the
+  option <code>fig.align='center'</code>):</p>
+
+<div class="chunk" id="html-cars-scatter"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">library</span>(ggplot2)
+</pre></div>
+<div class="error"><pre class="knitr r">## Error: there is no package called 'ggplot2'
+</pre></div>
+<div class="source"><pre class="knitr r">    <span class="hl kwd">plot</span>(mpg~hp, mtcars)
+</pre></div>
+</div><div class="rimage center"><img src="figure/html-cars-scatter.png" title="plot of chunk html-cars-scatter" alt="plot of chunk html-cars-scatter" class="plot" /></div><div class="rcode">
+<div class="source"><pre class="knitr r">    <span class="hl kwd">qplot</span>(hp, mpg, data=mtcars)+<span class="hl kwd">geom_smooth</span>()
+</pre></div>
+<div class="error"><pre class="knitr r">## Error: could not find function "qplot"
+</pre></div>
+</div></div>
+
+  <p>Errors, messages and warnings can be put into <code>div</code>'s
+  with different <code>class</code>es:</p>
+
+<div class="chunk" id="unnamed-chunk-3"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">sqrt</span>(-1)  # warning
+</pre></div>
+<div class="warning"><pre class="knitr r">## Warning: NaNs produced
+</pre></div>
+<div class="output"><pre class="knitr r">## [1] NaN
+</pre></div>
+<div class="source"><pre class="knitr r">    <span class="hl kwd">message</span>(<span class="hl str">'knitr says hello to HTML!'</span>)
+</pre></div>
+<div class="message"><pre class="knitr r">## knitr says hello to HTML!
+</pre></div>
+<div class="source"><pre class="knitr r">    1+<span class="hl str">'a'</span>  # mission impossible
+</pre></div>
+<div class="error"><pre class="knitr r">## Error: non-numeric argument to binary operator
+</pre></div>
+</div></div>
+
+  <p>In the end, let's show off a 3D plot from
+  the <strong>rgl</strong> package.</p>
+
+<div class="chunk" id="unnamed-chunk-4"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">library</span>(rgl)
+    knit_hooks$<span class="hl kwd">set</span>(rgl = hook_rgl)  # set up the hook first
+</pre></div>
+</div></div>
+
+<div class="chunk" id="fancy-rgl"><div class="rcode"><div class="source"><pre class="knitr r">    <span class="hl kwd">demo</span>(<span class="hl str">'bivar'</span>, package=<span class="hl str">'rgl'</span>, echo=<span class="hl kwa">FALSE</span>)
+</pre></div>
+<div class="message"><pre class="knitr r">## Loading required package: MASS
+</pre></div>
+<div class="source"><pre class="knitr r">    <span class="hl kwd">par3d</span>(zoom=.7)
+</pre></div>
+</div><div class="rimage center"><img src="figure/fancy-rgl.png" title="plot of chunk fancy-rgl" alt="plot of chunk fancy-rgl" class="plot" /></div></div>
+
+  <p>Well, everything seems to be working. Let's ask R what is the
+  value of &pi;? Of course it is <code class="knitr inline">3.1416</code>.</p>
+
+</body>
+</html>
