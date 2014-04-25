@@ -1,6 +1,7 @@
 *~
 *#
 *.out
+*.bin
 
 output_*
 
