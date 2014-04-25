@@ -2,10 +2,11 @@
 
 
 // left_{A,a,b,c} 
-const char *lA = "{e,i,o,a}"; // left_a with e
-const char *la = "{i,o,a}";
-const char *lb = "{h,u,k,x}";
-const char *lc = "{y,p,q,j}";
+const char *lA = "{e,i,o,a,h}"; // left_a with e
+const char *la = "{i,o,a,h}";
+const char *lb = "{u,k,x}";
+const char *lc = "{y,p}";
+const char *ld = "{q,j}";
 
 // right_{A,a,b,c,d}
 const char *rA = "{t,r,s,n}"; // right_a with t
@@ -32,6 +33,7 @@ void echo (char * label)
   if (strcmp("la", label) == 0) { printf("%s", la); }
   if (strcmp("lb", label) == 0) { printf("%s", lb); }
   if (strcmp("lc", label) == 0) { printf("%s", lc); }
+  if (strcmp("ld", label) == 0) { printf("%s", ld); }
   if (strcmp("ra", label) == 0) { printf("%s", ra); }
   if (strcmp("rb", label) == 0) { printf("%s", rb); }
   if (strcmp("rc", label) == 0) { printf("%s", rc); }
