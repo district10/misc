@@ -98,6 +98,9 @@ void echo (char * label)
      printf ("%s", "$'\\n'\n");
      return 0;
    }
+
+   // g ? 
    puts("Error Occurred!");
+   return -1;
  }
 
