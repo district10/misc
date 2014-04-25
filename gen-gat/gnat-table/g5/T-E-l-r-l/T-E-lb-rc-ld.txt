@@ -1,0 +1,19 @@
+ teudq
+ teudj
+ teugq
+ teugj
+ teufq
+ teufj
+ tekdq
+ tekdj
+ tekgq
+ tekgj
+ tekfq
+ tekfj
+ texdq
+ texdj
+ texgq
+ texgj
+ texfq
+ texfj
+

@@ -1,0 +1,10 @@
+ trr
+ trs
+ trn
+ tsr
+ tss
+ tsn
+ tnr
+ tns
+ tnn
+

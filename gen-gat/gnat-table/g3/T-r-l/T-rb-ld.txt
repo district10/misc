@@ -1,0 +1,7 @@
+ tmq
+ tmj
+ tlq
+ tlj
+ tcq
+ tcj
+

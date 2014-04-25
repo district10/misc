@@ -1,0 +1,25 @@
+ temty
+ temtp
+ temry
+ temrp
+ temsy
+ temsp
+ temny
+ temnp
+ telty
+ teltp
+ telry
+ telrp
+ telsy
+ telsp
+ telny
+ telnp
+ tecty
+ tectp
+ tecry
+ tecrp
+ tecsy
+ tecsp
+ tecny
+ tecnp
+

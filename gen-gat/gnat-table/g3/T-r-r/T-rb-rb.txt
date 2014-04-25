@@ -1,0 +1,10 @@
+ tmm
+ tml
+ tmc
+ tlm
+ tll
+ tlc
+ tcm
+ tcl
+ tcc
+

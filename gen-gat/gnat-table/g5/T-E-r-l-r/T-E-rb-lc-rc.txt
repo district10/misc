@@ -1,0 +1,19 @@
+ temyd
+ temyg
+ temyf
+ tempd
+ tempg
+ tempf
+ telyd
+ telyg
+ telyf
+ telpd
+ telpg
+ telpf
+ tecyd
+ tecyg
+ tecyf
+ tecpd
+ tecpg
+ tecpf
+

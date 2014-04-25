@@ -1,0 +1,10 @@
+ tdm
+ tdl
+ tdc
+ tgm
+ tgl
+ tgc
+ tfm
+ tfl
+ tfc
+

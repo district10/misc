@@ -1,0 +1,10 @@
+ trm
+ trl
+ trc
+ tsm
+ tsl
+ tsc
+ tnm
+ tnl
+ tnc
+

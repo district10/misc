@@ -1,0 +1,13 @@
+ teqdy
+ teqdp
+ teqgy
+ teqgp
+ teqfy
+ teqfp
+ tejdy
+ tejdp
+ tejgy
+ tejgp
+ tejfy
+ tejfp
+

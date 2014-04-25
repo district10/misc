@@ -1,0 +1,19 @@
+ temyv
+ temyb
+ temyw
+ tempv
+ tempb
+ tempw
+ telyv
+ telyb
+ telyw
+ telpv
+ telpb
+ telpw
+ tecyv
+ tecyb
+ tecyw
+ tecpv
+ tecpb
+ tecpw
+

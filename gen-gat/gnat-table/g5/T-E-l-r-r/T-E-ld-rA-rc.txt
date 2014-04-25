@@ -1,0 +1,25 @@
+ teqtd
+ teqtg
+ teqtf
+ teqrd
+ teqrg
+ teqrf
+ teqsd
+ teqsg
+ teqsf
+ teqnd
+ teqng
+ teqnf
+ tejtd
+ tejtg
+ tejtf
+ tejrd
+ tejrg
+ tejrf
+ tejsd
+ tejsg
+ tejsf
+ tejnd
+ tejng
+ tejnf
+

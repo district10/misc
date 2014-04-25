@@ -1,0 +1,19 @@
+ temdy
+ temdp
+ temgy
+ temgp
+ temfy
+ temfp
+ teldy
+ teldp
+ telgy
+ telgp
+ telfy
+ telfp
+ tecdy
+ tecdp
+ tecgy
+ tecgp
+ tecfy
+ tecfp
+

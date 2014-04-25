@@ -1,0 +1,10 @@
+ tur
+ tus
+ tun
+ tkr
+ tks
+ tkn
+ txr
+ txs
+ txn
+

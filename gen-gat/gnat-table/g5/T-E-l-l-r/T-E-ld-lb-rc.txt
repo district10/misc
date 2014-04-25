@@ -1,0 +1,19 @@
+ tequd
+ tequg
+ tequf
+ teqkd
+ teqkg
+ teqkf
+ teqxd
+ teqxg
+ teqxf
+ tejud
+ tejug
+ tejuf
+ tejkd
+ tejkg
+ tejkf
+ tejxd
+ tejxg
+ tejxf
+

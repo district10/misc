@@ -1,0 +1,10 @@
+ etum
+ etul
+ etuc
+ etkm
+ etkl
+ etkc
+ etxm
+ etxl
+ etxc
+

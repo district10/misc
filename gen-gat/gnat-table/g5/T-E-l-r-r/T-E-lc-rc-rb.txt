@@ -1,0 +1,19 @@
+ teydm
+ teydl
+ teydc
+ teygm
+ teygl
+ teygc
+ teyfm
+ teyfl
+ teyfc
+ tepdm
+ tepdl
+ tepdc
+ tepgm
+ tepgl
+ tepgc
+ tepfm
+ tepfl
+ tepfc
+

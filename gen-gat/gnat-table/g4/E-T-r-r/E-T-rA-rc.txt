@@ -1,0 +1,13 @@
+ ettd
+ ettg
+ ettf
+ etrd
+ etrg
+ etrf
+ etsd
+ etsg
+ etsf
+ etnd
+ etng
+ etnf
+

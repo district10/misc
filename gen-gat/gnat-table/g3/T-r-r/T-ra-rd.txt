@@ -1,0 +1,10 @@
+ trv
+ trb
+ trw
+ tsv
+ tsb
+ tsw
+ tnv
+ tnb
+ tnw
+

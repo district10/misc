@@ -1,0 +1,19 @@
+ tedqm
+ tedql
+ tedqc
+ tedjm
+ tedjl
+ tedjc
+ tegqm
+ tegql
+ tegqc
+ tegjm
+ tegjl
+ tegjc
+ tefqm
+ tefql
+ tefqc
+ tefjm
+ tefjl
+ tefjc
+

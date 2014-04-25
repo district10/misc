@@ -1,0 +1,10 @@
+ etud
+ etug
+ etuf
+ etkd
+ etkg
+ etkf
+ etxd
+ etxg
+ etxf
+

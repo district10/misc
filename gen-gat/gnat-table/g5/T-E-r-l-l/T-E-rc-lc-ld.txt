@@ -1,0 +1,13 @@
+ tedyq
+ tedyj
+ tedpq
+ tedpj
+ tegyq
+ tegyj
+ tegpq
+ tegpj
+ tefyq
+ tefyj
+ tefpq
+ tefpj
+

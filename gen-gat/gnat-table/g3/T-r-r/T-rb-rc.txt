@@ -1,0 +1,10 @@
+ tmd
+ tmg
+ tmf
+ tld
+ tlg
+ tlf
+ tcd
+ tcg
+ tcf
+

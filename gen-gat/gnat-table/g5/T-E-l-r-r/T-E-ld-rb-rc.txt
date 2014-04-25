@@ -1,0 +1,19 @@
+ teqmd
+ teqmg
+ teqmf
+ teqld
+ teqlg
+ teqlf
+ teqcd
+ teqcg
+ teqcf
+ tejmd
+ tejmg
+ tejmf
+ tejld
+ tejlg
+ tejlf
+ tejcd
+ tejcg
+ tejcf
+

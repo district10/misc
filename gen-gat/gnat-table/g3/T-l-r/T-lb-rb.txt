@@ -1,0 +1,10 @@
+ tum
+ tul
+ tuc
+ tkm
+ tkl
+ tkc
+ txm
+ txl
+ txc
+

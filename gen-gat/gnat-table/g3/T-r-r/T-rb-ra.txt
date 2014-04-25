@@ -1,0 +1,10 @@
+ tmr
+ tms
+ tmn
+ tlr
+ tls
+ tln
+ tcr
+ tcs
+ tcn
+

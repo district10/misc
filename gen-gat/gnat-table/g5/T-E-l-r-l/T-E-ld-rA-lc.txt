@@ -1,0 +1,17 @@
+ teqty
+ teqtp
+ teqry
+ teqrp
+ teqsy
+ teqsp
+ teqny
+ teqnp
+ tejty
+ tejtp
+ tejry
+ tejrp
+ tejsy
+ tejsp
+ tejny
+ tejnp
+

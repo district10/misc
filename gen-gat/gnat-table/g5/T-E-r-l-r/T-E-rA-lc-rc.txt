@@ -1,0 +1,25 @@
+ tetyd
+ tetyg
+ tetyf
+ tetpd
+ tetpg
+ tetpf
+ teryd
+ teryg
+ teryf
+ terpd
+ terpg
+ terpf
+ tesyd
+ tesyg
+ tesyf
+ tespd
+ tespg
+ tespf
+ tenyd
+ tenyg
+ tenyf
+ tenpd
+ tenpg
+ tenpf
+

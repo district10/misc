@@ -1,0 +1,19 @@
+ teyvd
+ teyvg
+ teyvf
+ teybd
+ teybg
+ teybf
+ teywd
+ teywg
+ teywf
+ tepvd
+ tepvg
+ tepvf
+ tepbd
+ tepbg
+ tepbf
+ tepwd
+ tepwg
+ tepwf
+

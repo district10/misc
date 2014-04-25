@@ -1,0 +1,13 @@
+ tdi
+ tdo
+ tda
+ tdh
+ tgi
+ tgo
+ tga
+ tgh
+ tfi
+ tfo
+ tfa
+ tfh
+

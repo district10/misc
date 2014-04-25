@@ -1,0 +1,10 @@
+ tdu
+ tdk
+ tdx
+ tgu
+ tgk
+ tgx
+ tfu
+ tfk
+ tfx
+

@@ -1,0 +1,19 @@
+ teymv
+ teymb
+ teymw
+ teylv
+ teylb
+ teylw
+ teycv
+ teycb
+ teycw
+ tepmv
+ tepmb
+ tepmw
+ teplv
+ teplb
+ teplw
+ tepcv
+ tepcb
+ tepcw
+

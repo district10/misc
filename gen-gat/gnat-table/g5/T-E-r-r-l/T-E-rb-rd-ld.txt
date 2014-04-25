@@ -1,0 +1,19 @@
+ temvq
+ temvj
+ tembq
+ tembj
+ temwq
+ temwj
+ telvq
+ telvj
+ telbq
+ telbj
+ telwq
+ telwj
+ tecvq
+ tecvj
+ tecbq
+ tecbj
+ tecwq
+ tecwj
+

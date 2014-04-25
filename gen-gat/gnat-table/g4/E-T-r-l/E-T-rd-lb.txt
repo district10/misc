@@ -1,0 +1,10 @@
+ etvu
+ etvk
+ etvx
+ etbu
+ etbk
+ etbx
+ etwu
+ etwk
+ etwx
+

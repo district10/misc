@@ -1,0 +1,10 @@
+ tdr
+ tds
+ tdn
+ tgr
+ tgs
+ tgn
+ tfr
+ tfs
+ tfn
+

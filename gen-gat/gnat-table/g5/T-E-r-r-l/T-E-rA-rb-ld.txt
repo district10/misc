@@ -1,0 +1,25 @@
+ tetmq
+ tetmj
+ tetlq
+ tetlj
+ tetcq
+ tetcj
+ termq
+ termj
+ terlq
+ terlj
+ tercq
+ tercj
+ tesmq
+ tesmj
+ teslq
+ teslj
+ tescq
+ tescj
+ tenmq
+ tenmj
+ tenlq
+ tenlj
+ tencq
+ tencj
+

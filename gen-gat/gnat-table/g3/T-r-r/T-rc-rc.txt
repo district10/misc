@@ -1,0 +1,10 @@
+ tdd
+ tdg
+ tdf
+ tgd
+ tgg
+ tgf
+ tfd
+ tfg
+ tff
+

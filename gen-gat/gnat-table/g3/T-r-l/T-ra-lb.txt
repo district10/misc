@@ -1,0 +1,10 @@
+ tru
+ trk
+ trx
+ tsu
+ tsk
+ tsx
+ tnu
+ tnk
+ tnx
+

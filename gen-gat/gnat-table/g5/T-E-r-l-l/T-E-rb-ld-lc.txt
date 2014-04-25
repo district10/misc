@@ -1,0 +1,13 @@
+ temqy
+ temqp
+ temjy
+ temjp
+ telqy
+ telqp
+ teljy
+ teljp
+ tecqy
+ tecqp
+ tecjy
+ tecjp
+

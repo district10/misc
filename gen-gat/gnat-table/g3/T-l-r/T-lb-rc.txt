@@ -1,0 +1,10 @@
+ tud
+ tug
+ tuf
+ tkd
+ tkg
+ tkf
+ txd
+ txg
+ txf
+

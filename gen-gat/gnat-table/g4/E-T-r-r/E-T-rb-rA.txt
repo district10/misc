@@ -1,0 +1,13 @@
+ etmt
+ etmr
+ etms
+ etmn
+ etlt
+ etlr
+ etls
+ etln
+ etct
+ etcr
+ etcs
+ etcn
+

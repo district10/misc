@@ -1,0 +1,13 @@
+ tim
+ til
+ tic
+ tom
+ tol
+ toc
+ tam
+ tal
+ tac
+ thm
+ thl
+ thc
+

@@ -1,0 +1,25 @@
+ tetvy
+ tetvp
+ tetby
+ tetbp
+ tetwy
+ tetwp
+ tervy
+ tervp
+ terby
+ terbp
+ terwy
+ terwp
+ tesvy
+ tesvp
+ tesby
+ tesbp
+ teswy
+ teswp
+ tenvy
+ tenvp
+ tenby
+ tenbp
+ tenwy
+ tenwp
+

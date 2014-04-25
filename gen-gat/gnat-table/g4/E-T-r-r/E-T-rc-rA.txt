@@ -1,0 +1,13 @@
+ etdt
+ etdr
+ etds
+ etdn
+ etgt
+ etgr
+ etgs
+ etgn
+ etft
+ etfr
+ etfs
+ etfn
+

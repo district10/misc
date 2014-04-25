@@ -1,0 +1,10 @@
+ trd
+ trg
+ trf
+ tsd
+ tsg
+ tsf
+ tnd
+ tng
+ tnf
+

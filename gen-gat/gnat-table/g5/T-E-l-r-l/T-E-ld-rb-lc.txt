@@ -1,0 +1,13 @@
+ teqmy
+ teqmp
+ teqly
+ teqlp
+ teqcy
+ teqcp
+ tejmy
+ tejmp
+ tejly
+ tejlp
+ tejcy
+ tejcp
+

@@ -1,0 +1,10 @@
+ etmu
+ etmk
+ etmx
+ etlu
+ etlk
+ etlx
+ etcu
+ etck
+ etcx
+
