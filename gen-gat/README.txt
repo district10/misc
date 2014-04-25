@@ -1,12 +1,12 @@
+#|         
+#|                  ####     ##     #####
+#|                 #    #   #  #      #
+#|                 #       #    #     #
+#|                 #  ###  ######     #
+#|                 #    #  #    #     #
+#|                  ####   #    #     #
 #|
-#|     ####     ##     #####
-#|    #    #   #  #      #
-#|    #       #    #     #
-#|    #  ###  ######     #
-#|    #    #  #    #     #
-#|     ####   #    #     #
-#|
-#|    Chinese Input Method
+#|                 Chinese Input Method
 
 # The Script to Generate My Own Chinese Input Method Gat tables
 
