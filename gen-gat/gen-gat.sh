@@ -11,7 +11,7 @@ echo ">> Generating Gat Tables..."
 
 # specify output dir, to store scripts and txt tables 
 # if there is already this folder, just delete the old one
-outdir="gnat-table"
+outdir="gat-tables"
 rm -Rf ${outdir} && mkdir ${outdir} && cd ${outdir}
 
 # count char combinations, how big our chinese table matters of course
