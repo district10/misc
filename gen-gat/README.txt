@@ -8,7 +8,8 @@
 #|
 #|                 Chinese Input Method
 
-# The Script to Generate My Own Chinese Input Method Gat tables
+# The Script to Generate My Own Chinese Input Method Gat Char Key Tables
+# Gat: https://github.com/district10/gat
 
 
 
