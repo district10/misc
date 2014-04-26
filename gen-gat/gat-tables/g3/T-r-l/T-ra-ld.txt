@@ -1,7 +1,0 @@
- trq
- trj
- tsq
- tsj
- tnq
- tnj
-

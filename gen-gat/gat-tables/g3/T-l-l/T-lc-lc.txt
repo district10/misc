@@ -1,5 +1,0 @@
- tyy
- typ
- tpy
- tpp
-

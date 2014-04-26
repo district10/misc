@@ -1,7 +1,0 @@
- tdy
- tdp
- tgy
- tgp
- tfy
- tfp
-
