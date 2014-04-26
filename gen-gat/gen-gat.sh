@@ -2,20 +2,20 @@
 
 start=$(date +%s%N) # time it, start
 
-# use bin to generate gen-gat scripts, so it's called gen-gen-gat 
+# use bin to generate gen-gat scripts, so it's called gen-gen-gat
 # this is the compiled binary file of my gen-gen-gat.c
 bin='/root/Desktop/misc/gen-gat/gen-gen-gat.bin'
 
 # print out some friendly message
 echo ">> Generating Gat Tables..."
 
-# specify output dir, to store scripts and txt tables 
+# specify output dir, to store scripts and txt tables
 # if there is already this folder, just delete the old one
 outdir="gat-tables"
 rm -Rf ${outdir} && mkdir ${outdir} && cd ${outdir}
 
 # count char combinations, how big our chinese table matters of course
-char=0 
+char=0
 
 
 # chars are in varient length, catagrayed as g1, g2, g3, g4, g5
@@ -34,7 +34,7 @@ gram='g1'
 mkdir ${gram} && cd ${gram}
 
 counter1=0
-echo -n Generating ${gram} tables ... 
+echo -n Generating ${gram} tables ...
 echo -n "#Table Finished: "
 tput sc
 
@@ -62,7 +62,7 @@ d1=$((e - s))
 echo -n "-------- $((d1/1000000)) milliseconds"
 echo ""
 
-#                   
+#
 #                            #####
 #                     ####  #     #
 #                    #    #       #
@@ -70,13 +70,13 @@ echo ""
 #                    #  ### #
 #                    #    # #
 #                     ####  #######
-#                   
+#
 
 gram='g2'
 mkdir ${gram} && cd ${gram}
 
 counter2=0
-echo -n Generating ${gram} tables ... 
+echo -n Generating ${gram} tables ...
 echo -n "#Table Finished: "
 tput sc
 
@@ -104,7 +104,7 @@ e=$(date +%s%N)
 d2=$((e - s))
 echo -n "-------- $((d2/1000000)) milliseconds"
 echo ""
-                   
+
 #                            #####
 #                     ####  #     #
 #                    #    #       #
@@ -116,13 +116,13 @@ echo ""
 gram='g3' && mkdir ${gram} && cd ${gram}
 
 counter3=0
-echo -n Generating ${gram} tables ... 
+echo -n Generating ${gram} tables ...
 echo -n "#Table Finished: "
 tput sc
 
 s=$(date +%s%N)
 for x in {l,r};
-do 
+do
     for y in {l,r};
     do
 	wd="T-${x}-${y}" # working dir
@@ -162,13 +162,13 @@ echo ""
 gram='g4' && mkdir ${gram} && cd ${gram}
 
 counter4=0
-echo -n Generating ${gram} tables ... 
+echo -n Generating ${gram} tables ...
 echo -n "#Table Finished: "
 tput sc
 
 s=$(date +%s%N)
 for x in {l,r};
-do 
+do
     for y in {l,r};
     do
 	wd="E-T-${x}-${y}" # working dir
@@ -209,12 +209,12 @@ gram='g5' && mkdir ${gram} && cd ${gram}
 
 s=$(date +%s%N)
 counter5=0
-echo -n Generating ${gram} tables ... 
+echo -n Generating ${gram} tables ...
 echo -n "#Table Finished: "
 tput sc
 
 for x in {l,r};
-do 
+do
     for y in {l,r};
     do
 	for z in {l,r};
