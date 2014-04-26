@@ -333,6 +333,8 @@ grade3_to_grade1
 
 out_file="${out_dir}/${grade1}/data.data"
 awk 'NF {print $1}' ${out_file} > ${out_dir}/gat-char-keys.txt
+head -6000 ${out_dir}/gat-char-keys.txt > ${out_dir}/gat-char-keys-6000.txt
+
 
 #   ➜  output git:(master) ✗ wc -l gat-char-keys.txt
 #   6211 gat-char-keys.txt
