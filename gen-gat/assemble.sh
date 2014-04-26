@@ -1,3 +1,4 @@
+#!/bin/bash
 # This is script is called to assemble gat tables
 
 # ============= [ORDER] ============

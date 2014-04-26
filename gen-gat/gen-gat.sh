@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Run it as: `bash gen-gat.sh'
 
 start=$(date +%s%N) # time it, start

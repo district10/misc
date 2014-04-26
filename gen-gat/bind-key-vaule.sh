@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # To bind Keys and Values 
 
 keys="gat-tables/output/gat-char-keys-6000.txt"
