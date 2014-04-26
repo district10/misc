@@ -32,7 +32,7 @@ Overall
 
 Design Strategies
 -----------------
-
+ 0. All that matters, is speed and comfort.
  1. Letter "z" is reserved. 
  2. See my Script & Gat-tables folder for more infomation.
  3. All We care is Efficiency, and we don't want to watch and choose 1/2/3, that really kills me.
