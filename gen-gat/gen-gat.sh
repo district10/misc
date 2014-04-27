@@ -6,8 +6,7 @@ start=$(date +%s%N) # time it, start
 
 # use bin to generate gen-gat scripts, so it's called gen-gen-gat
 # this is the compiled binary file of my gen-gen-gat.c
-bin='/root/Desktop/misc/gen-gat/gen-gen-gat.bin'
-
+bin='/root/Desktop/district10/misc/gen-gat/gen-gen-gat.bin' # hard coded, better not modify it        
 # print out some friendly message
 echo ">> Generating Gat Tables..."
 
