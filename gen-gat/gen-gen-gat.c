@@ -48,7 +48,7 @@ void echo (char * label)
 
  int main(int argc, char ** argv)
  {
-   puts("#/bin/bash\n");
+   puts("#!/bin/bash\n");
 
    // g 1
    if (strcmp("g1", argv[1]) == 0) {
