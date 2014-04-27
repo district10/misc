@@ -15,7 +15,7 @@ gat-eim tutorial
 ### 练习方法
 
  - 1. 把 data 文件夹下的文件拷来，打开 Emacs 对着敲，我们只能这样适应一个没有规律只重效率的输入法；
- - 2. 把喜欢的文字（自己的旧文等）转化好，对着敲。转化方法[戳这里][gat-trans] 
+ - 2. 把喜欢的文字（自己的旧文等）转化好，对着敲。转化方法[戳这里][gat-trans]。我转化了一些文章，[戳这里][articles]
 
 ```
 ➜  scripts git:(master) ✗ ./gat-trans2.sh "自己做的中文输入法出原型了，现在只能在 Emacs 里使用。从设计上完虐各种输入法。学习曲线异常陡。"          
@@ -33,3 +33,4 @@ gat-eim tutorial
 [bigrams]: https://github.com/district10/misc/tree/master/gen-gat/zh_chars/data/bigrams
 [gat-trans]: https://github.com/district10/dotfiles/tree/master/scripts/
 [more-funcs]: https://github.com/district10/dotfiles/blob/master/emacs/dot_emacs.d/more-funcs.el
+[articles]: https://github.com/district10/dotfiles/tree/master/scripts/articles
